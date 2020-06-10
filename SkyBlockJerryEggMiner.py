@@ -10,7 +10,6 @@ import time
 import pyautogui as p
 import logging
 
-afkcounter = 0
 direction = True
 
 screenWidth, screenHeight = p.size()
@@ -38,19 +37,5 @@ while True:
     p.click()
     logging.info("Pressed Drop")
     logging.info("Ended Iteration")
-    if afkcounter == 2:
-        if direction:
-            time.sleep(1)
-            p.press('w')
-            time.sleep(1)
-        else:
-            time.sleep(1)
-            p.press('s')
-            time.sleep(1)
-            
-        direction = not direction
-        afkcounter = 0
-    else:
-        afkcounter += 1
         
         
