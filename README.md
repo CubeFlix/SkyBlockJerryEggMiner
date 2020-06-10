@@ -1,7 +1,5 @@
 # SkyBlockJerryEggMiner
 
-SkyBlockJerryEggMiner
-=========
 
 An AFK auto-clicker for Minecraft Hypixel SkyBlock.
 
