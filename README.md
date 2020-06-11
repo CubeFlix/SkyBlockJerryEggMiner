@@ -1,6 +1,6 @@
 # SkyBlockJerryEggMiner
 
-![Jerry Eggs](/images/jerryeggs.PNG)
+![Jerry Eggs](/jerryeggs.PNG)
 
 An AFK auto-clicker for Minecraft Hypixel SkyBlock.
 
