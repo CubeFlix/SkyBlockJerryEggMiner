@@ -15,7 +15,10 @@ direction = True
 screenWidth, screenHeight = p.size()
 buttonprecentx, buttonprecenty = 0.65, 0.437
 
-logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s', level=logging.DEBUG)
+ylogging = '%(asctime)s %(levelname)s : %(message)s'
+nlogging = ''
+
+logging.basicConfig(format='', level=logging.DEBUG)
 
 logging.info("Beginning 10 second delay. Please enter Minecraft and unpause the game. Pause game and move cursor to any corner of the screen to end the program.")
 
