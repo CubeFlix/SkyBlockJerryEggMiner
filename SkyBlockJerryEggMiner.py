@@ -9,16 +9,26 @@
 import time
 import pyautogui as p
 import logging
+import os
+import keyboard
+import threading
 
-direction = True
-
+def checkKeyPress():
+    while True:
+        if keyboard.read_key() == "x":
+            os._exit(1)
+            
 screenWidth, screenHeight = p.size()
 buttonprecentx, buttonprecenty = 0.65, 0.437
 
 ylogging = '%(asctime)s %(levelname)s : %(message)s'
-nlogging = ''
 
-logging.basicConfig(format='', level=logging.DEBUG)
+logging.basicConfig(format=ylogging, level=logging.DEBUG)
+
+keypressthread = threading.Thread(target=checkKeyPress)
+keypressthread.start()
+
+logging.info("Sucessfully began thread")
 
 logging.info("Beginning 10 second delay. Please enter Minecraft and unpause the game. Pause game and move cursor to any corner of the screen to end the program.")
 
@@ -40,5 +50,6 @@ while True:
     p.click()
     logging.info("Pressed Drop")
     logging.info("Ended Iteration")
-        
+
+
         
