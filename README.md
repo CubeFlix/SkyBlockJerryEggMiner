@@ -33,3 +33,5 @@ Dependencies
 Python 2-3 (https://www.python.org/)
 
 PyAutoGui "pip install pyautogui" (https://pypi.org/project/PyAutoGUI/)
+
+keyboard "pip install keyboard" (https://pypi.org/project/keyboard/)
